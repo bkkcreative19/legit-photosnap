@@ -1,0 +1,512 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* nav */
+.nav {
+  display: flex;
+  padding: 1.5rem 0;
+  justify-content: center;
+}
+
+.nav-container {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list ul li {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  margin: 0 2rem;
+  text-transform: uppercase;
+}
+
+.nav-btn {
+  background-color: #000000;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1.2rem 2.5rem;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* main */
+.hero-section {
+  display: flex;
+  height: 80vh;
+}
+
+.hero-section-content-container {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section:first-child {
+  background-color: #000;
+  color: #fff;
+}
+.hero-section:first-child a {
+  color: #fff;
+}
+.hero-section:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.hero-section-content {
+  width: 60%;
+}
+
+.hero-section-content h1 {
+  font-size: 4rem;
+
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}
+.hero-section-content p {
+  font-size: 1.5rem;
+  opacity: 0.6;
+  line-height: 1.7;
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+}
+.hero-section-content a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.first {
+  width: 55%;
+  height: 100%;
+  background: url("/assets/home/desktop/create-and-share.jpg") center no-repeat;
+  background-size: cover;
+}
+.second {
+  width: 55%;
+  height: 100%;
+  background: url("/assets/home/desktop/beautiful-stories.jpg") center no-repeat;
+  background-size: cover;
+}
+.third {
+  width: 55%;
+  height: 100%;
+  background: url("/assets/home/desktop/designed-for-everyone.jpg") center
+    no-repeat;
+  background-size: cover;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+}
+
+.cta svg {
+  margin-left: 3rem;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+  .nav-container {
+    width: 85%;
+  }
+
+  .hero-section-content-container {
+    width: 65%;
+  }
+
+  .hero-section-img {
+    width: 35%;
+  }
+  .first {
+    width: 100%;
+    height: 100%;
+    background: url("/assets/home/tablet/create-and-share.jpg") center no-repeat;
+    background-size: cover;
+  }
+  .second {
+    width: 100%;
+    height: 100%;
+    background: url("/assets/home/tablet/beautiful-stories.jpg") center
+      no-repeat;
+    background-size: cover;
+  }
+  .third {
+    width: 100%;
+    height: 100%;
+    background: url("/assets/home/tablet/designed-for-everyone.jpg") center
+      no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .nav-list ul,
+  .nav-btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .hero-section-content-container {
+    width: 100%;
+  }
+
+  .hero-section-img {
+    width: 100%;
+    flex: 2;
+  }
+
+  .hero-section {
+    flex-direction: column-reverse;
+    height: 100vh;
+  }
+
+  .hero-section:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .hero-section-content {
+    margin: 5rem 0;
+    margin-right: 8rem;
+    flex: 2;
+    width: 65%;
+  }
+
+  .hero-section-content h1 {
+    font-size: 3.2rem;
+  }
+  .hero-section-content p {
+    font-size: 1.5rem;
+  }
+  .hero-section-content a {
+    font-size: 1.2rem;
+  }
+
+  .first {
+    width: 100%;
+    height: 100%;
+    background: url("/assets/home/mobile/create-and-share.jpg") center no-repeat;
+    background-size: cover;
+  }
+  .second {
+    width: 100%;
+    height: 100%;
+    background: url("/assets/home/mobile/beautiful-stories.jpg") center
+      no-repeat;
+    background-size: cover;
+  }
+  .third {
+    width: 100%;
+    height: 100%;
+    background: url("/assets/home/mobile/designed-for-everyone.jpg") center
+      no-repeat;
+    background-size: cover;
+  }
+}
+
+/* Cards Section */
+#cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  height: 40rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  color: #fff;
+  margin: 0 2rem;
+}
+
+.card-content h3 {
+  font-size: 1.8rem;
+}
+
+.card-content p {
+  font-size: 1.3rem;
+  margin-top: 0.4rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1rem;
+}
+.card-content .cta {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.card-content a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.card:first-child {
+  background: url("/assets/stories/desktop/mountains.jpg") no-repeat;
+  background-size: cover;
+}
+.card:nth-child(2) {
+  background: url("/assets/stories/desktop/cityscapes.jpg") no-repeat;
+  background-size: cover;
+}
+.card:nth-child(3) {
+  background: url("/assets/stories/desktop/18-days-voyage.jpg") no-repeat;
+  background-size: cover;
+}
+.card:nth-child(4) {
+  background: url("/assets/stories/desktop/architecturals.jpg") no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+  #cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card:first-child {
+    background: url("/assets/stories/mobile/mountains.jpg") no-repeat;
+    background-size: cover;
+  }
+  .card:nth-child(2) {
+    background: url("/assets/stories/mobile/cityscapes.jpg") no-repeat;
+    background-size: cover;
+  }
+  .card:nth-child(3) {
+    background: url("/assets/stories/mobile/18-days-voyage.jpg") no-repeat;
+    background-size: cover;
+  }
+  .card:nth-child(4) {
+    background: url("/assets/stories/mobile/architecturals.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+/* features */
+#features {
+  display: flex;
+  justify-content: center;
+  padding: 10rem 0;
+  margin: 0 11rem;
+}
+
+.features-container {
+  display: flex;
+  gap: 4rem;
+}
+
+.feature {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.feature h3 {
+  font-size: 1.8rem;
+  margin: 4rem 0 2rem 0;
+}
+.feature p {
+  font-size: 1.5rem;
+  opacity: 0.6;
+  width: 85%;
+  line-height: 2;
+}
+
+.feature img {
+  height: 5rem;
+  width: 7rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .features-container {
+    flex-direction: column;
+  }
+}
+
+/* footer */
+#footer {
+  display: flex;
+  justify-content: center;
+  padding: 6rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  width: 75%;
+}
+
+.footer-list-logos {
+  margin-top: 8.7rem;
+}
+
+.footer-list-logos svg {
+  margin: 0 0.7rem;
+}
+
+.footer-logo img {
+  fill: red;
+  stroke: red;
+}
+
+.footer-copyright {
+  margin-left: auto;
+}
+
+.facebook,
+.youtube,
+.instagram,
+.pinterest,
+.twiiter {
+  transition: all 0.3s;
+}
+
+.facebook:hover {
+  fill: #63afdb;
+  pointer-events: all;
+}
+.youtube:hover {
+  fill: #d3205a;
+  pointer-events: all;
+}
+.instagram:hover {
+  fill: #65ffeb;
+  pointer-events: all;
+}
+.pinterest:hover {
+  fill: #f6c683;
+  pointer-events: all;
+}
+.twitter:hover {
+  fill: #ffc593;
+  pointer-events: all;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 9rem;
+}
+.footer-nav li {
+  letter-spacing: 0.2rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footer-nav li:not(:first-child) {
+  margin: 2.5rem 0 0 0;
+}
+
+.footer-cta a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 auto;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.footer-cta svg {
+  margin-left: -4rem;
+  margin-right: -3rem;
+}
+
+.footer-copyright span {
+  display: block;
+  margin-top: 8.7rem;
+  font-size: 1.3rem;
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+  .footer-container {
+    display: flex;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  #footer {
+    align-items: center;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-list-logos {
+    margin-top: 2.7rem;
+  }
+
+  .footer-nav ul {
+    margin: 4rem 0 0;
+    text-align: center;
+  }
+
+  .footer-copyright {
+    margin: 10rem 0 0;
+  }
+
+  .footer-cta a {
+    margin: 0 0 0 3.3rem;
+  }
+
+  .footer-cta svg {
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+
+  .footer-copyright span {
+    margin-top: 2.7rem;
+  }
+}
