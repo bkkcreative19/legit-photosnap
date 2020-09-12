@@ -271,7 +271,7 @@ body {
 
 .card:hover {
   transform: translateY(-3rem);
-  border-bottom: 3px solid #bc7198;
+  border-bottom: 4px solid #bc7198;
 }
 
 .card-content {
