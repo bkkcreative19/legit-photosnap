@@ -364,9 +364,8 @@ body {
   line-height: 2;
 }
 
-.feature img {
-  height: 5rem;
-  width: 7rem;
+.feature i {
+  font-size: 7rem;
 }
 
 @media screen and (max-width: 1100px) {
