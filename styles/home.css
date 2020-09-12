@@ -14,6 +14,10 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+.cta:hover {
+  text-decoration: underline;
+}
+
 /* nav */
 .nav {
   display: flex;
@@ -262,6 +266,12 @@ body {
 
 .card {
   height: 40rem;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3rem);
+  border-bottom: 3px solid #bc7198;
 }
 
 .card-content {
@@ -423,6 +433,7 @@ body {
 .pinterest,
 .twiiter {
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .facebook:hover {
@@ -457,6 +468,11 @@ body {
   font-size: 1.1rem;
   text-transform: uppercase;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.footer-nav li:hover {
+  color: rgba(158, 154, 154, 0.473);
 }
 
 .footer-nav li:not(:first-child) {
