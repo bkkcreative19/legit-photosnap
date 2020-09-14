@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+#hero {
+  display: flex;
+  height: 70vh;
+}
+
+.content {
+  width: 45%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-container {
+  width: 60%;
+}
+
+.content-container h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+
+.content-container p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  opacity: 0.6;
+}
+
+.img {
+  background: url("/images/features/desktop/hero.jpg") center no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 55%;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+  .content {
+    width: 65%;
+  }
+  .img {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #hero {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+  }
+
+  .content {
+    height: 45%;
+    width: 100%;
+    justify-content: start;
+  }
+
+  .img {
+    height: 55%;
+    width: 100%;
+  }
+
+  .content-container {
+    margin-left: 3.5rem;
+    width: 85%;
+  }
+}
+
+/* features */
+#features {
+  margin: 6rem;
+}
+
+@media screen and (max-width: 800px) {
+  #features {
+    margin: 1rem;
+  }
+}
+
+/* beta */
+#beta {
+  background: url("/assets/shared/desktop/bg-beta.jpg") center no-repeat;
+  background-size: cover;
+  height: 35vh;
+}
+
+.beta-content {
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+  width: 69%;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+.beta-content h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  width: 50%;
+  font-weight: 400;
+}
+.beta-content a {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+  .beta-content {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 750px) {
+  #beta {
+    height: 45vh;
+  }
+
+  .beta-content {
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+
+  .beta-content h1 {
+    font-size: 3.2rem;
+    margin: auto 0;
+    width: 100%;
+    line-height: 1.4;
+  }
+
+  .beta-content .cta {
+    margin-bottom: 6rem;
+  }
+}
