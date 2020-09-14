@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -40,6 +41,7 @@ a {
 .nav-list ul {
   display: flex;
   list-style: none;
+  align-items: center;
 }
 
 .nav-list ul li {
@@ -195,11 +197,22 @@ a {
 
 @media screen and (max-width: 750px) {
   .nav-container {
-    width: 90%;
+    width: 100%;
+    flex-wrap: wrap;
   }
-  .nav-list ul,
+
+  .nav-list ul li {
+    display: inline-block;
+  }
+  .nav-list,
   .nav-btn {
     display: none;
+  }
+
+  .nav-list.show,
+  .nav-btn.show {
+    display: flex;
+    margin-top: 5rem;
   }
 
   .hamburger {

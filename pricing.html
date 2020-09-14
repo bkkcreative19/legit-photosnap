@@ -9,12 +9,6 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
 
     <link rel="stylesheet" href="/styles/home.css" />
     <link rel="stylesheet" href="/styles/features.css" />
@@ -56,36 +50,111 @@
       <div class="img"></div>
     </section>
 
+    <!-- Cards -->
+    <!--  TOGGLE  -->
+    <div class="toggle-container">
+      <div class="toggle">
+        <p>Monthly</p>
+        <label class="toggle-box">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <p>Annaully</p>
+      </div>
+    </div>
+    <!--  CARDS -->
+    <div class="cards pricing-cards">
+      <div class="pricing-card card-one">
+        <h4 class="title">Basic</h4>
+        <p class="benefits">
+          Includes basic usage of our platform. Recommended for new and aspiring
+          photographers.
+        </p>
+        <h1 class="price monthly">&dollar;19.99<span>per month</span></h1>
+        <h1 class="price yearly">&dollar;199.99<span>per year</span></h1>
+
+        <button class="button">Pick a plan</button>
+      </div>
+      <div class="pricing-card card-two">
+        <h4 class="title">Pro</h4>
+        <p class="benefits">
+          More advanced features available. Recommended for photography veterans
+          and professionals.
+        </p>
+        <h1 class="price monthly">&dollar;24.99<span>per month</span></h1>
+        <h1 class="price yearly">&dollar;249.99<span>per year</span></h1>
+
+        <button class="button">Pick a plan</button>
+      </div>
+      <div class="pricing-card card-three">
+        <h4 class="title">Business</h4>
+        <p class="benefits">
+          Additional features available such as more detailed metrics.
+          Recommended for business owners.
+        </p>
+        <h1 class="price monthly">&dollar;39.99 <span>per month</span></h1>
+        <h1 class="price yearly">&dollar;399.99<span>per year</span></h1>
+
+        <button class="button">Pick a plan</button>
+      </div>
+    </div>
     <section id="table">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">The Features</th>
-            <th scope="col">Basic</th>
-            <th scope="col">Pro</th>
-            <th scope="col">Business</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
+      <h1>Compare</h1>
+      <table>
+        <tr>
+          <th style="width: 50%">Features</th>
+          <th>Basic</th>
+          <th>Pro</th>
+          <th>Business</th>
+        </tr>
+        <tr>
+          <td>Unlimited Story Posting</td>
+          <td><img src="/assets/pricing/desktop/check.svg" alt="check" /></td>
+          <td><img src="/assets/pricing/desktop/check.svg" alt="check" /></td>
+          <td><img src="/assets/pricing/desktop/check.svg" alt="check" /></td>
+        </tr>
+        <tr>
+          <td>Unlimited Photo Upload</td>
+          <td><img src="/assets/pricing/desktop/check.svg" alt="check" /></td>
+          <td><img src="/assets/pricing/desktop/check.svg" alt="check" /></td>
+          <td><img src="/assets/pricing/desktop/check.svg" alt="check" /></td>
+        </tr>
+        <tr>
+          <td>Embedding Custom Content</td>
+          <td><i class="fa fa-remove"></i></td>
+          <td><img src="/assets/pricing/desktop/check.svg" alt="check" /></td>
+          <td><img src="/assets/pricing/desktop/check.svg" alt="check" /></td>
+        </tr>
+        <tr>
+          <td>Customize Metadata</td>
+          <td><i class="fa fa-remove"></i></td>
+          <td><img src="/assets/pricing/desktop/check.svg" alt="check" /></td>
+          <td><img src="/assets/pricing/desktop/check.svg" alt="check" /></td>
+        </tr>
+        <tr>
+          <td>Advanced Metrics</td>
+          <td><i class="fa fa-remove"></i></td>
+          <td><i class="fa fa-remove"></i></td>
+          <td><img src="/assets/pricing/desktop/check.svg" alt="check" /></td>
+        </tr>
+        <tr>
+          <td>Photo Downloads</td>
+          <td><i class="fa fa-remove"></i></td>
+          <td><i class="fa fa-remove"></i></td>
+          <td><img src="/assets/pricing/desktop/check.svg" alt="check" /></td>
+        </tr>
+        <tr>
+          <td>Search Engine Indexing</td>
+          <td><i class="fa fa-remove"></i></td>
+          <td><i class="fa fa-remove"></i></td>
+          <td><img src="/assets/pricing/desktop/check.svg" alt="check" /></td>
+        </tr>
+        <tr>
+          <td>Custom Analytics</td>
+          <td><i class="fa fa-remove"></i></td>
+          <td><i class="fa fa-remove"></i></td>
+          <td><img src="/assets/pricing/desktop/check.svg" alt="check" /></td>
+        </tr>
       </table>
     </section>
 
@@ -203,5 +272,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="/js/app.js"></script>
   </body>
 </html>
