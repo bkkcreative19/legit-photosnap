@@ -35,6 +35,16 @@
       </div>
     </nav>
 
+    <nav class="dropdown-nav">
+      <ul class="dropdown-nav-list">
+        <a href="/stories.html"><li>Stories</li></a>
+        <a href="/features.html"><li>Features</li></a>
+        <a href="/pricing.html"> <li>Pricing</li></a>
+      </ul>
+
+      <button class="dropdown-nav-btn">Get an invite</button>
+    </nav>
+
     <section id="hero">
       <div class="content">
         <div class="content-container">
@@ -217,5 +227,22 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const dropDown = document.querySelector(".dropdown-nav");
+      const navBtn = document.querySelector(".nav-btn");
+      const ul = document.querySelector(".ul");
+
+      hamburger.addEventListener("click", () => {
+        dropDown.classList.toggle("display");
+
+        if (dropDown.classList.contains("display")) {
+          dropDown.style.display = "flex";
+        } else {
+          dropDown.style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>
